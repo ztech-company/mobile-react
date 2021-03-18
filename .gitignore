@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Built application files
 *.apk
 *.ap_
@@ -68,3 +69,11 @@ node_modules/
 
 # Misc. OS files
 .DS_Store
+=======
+sample/JumioMobileSDKSample/Build
+sample/JumioMobileSDK
+*/.DS_Store
+.DS_Store
+
+#test
+>>>>>>> master

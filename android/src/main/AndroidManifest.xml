@@ -1,42 +1,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.jumio.react">
-    
+    xmlns:tools="http://schemas.android.com/tools" package="com.jumio.react">
+
     <uses-permission android:name="android.permission.VIBRATE"/>
     <uses-feature android:name="android.hardware.camera" android:required="false"/>
-    
+
     <application>
-		<meta-data
-			android:name="com.google.android.gms.version"
-			android:value="@integer/google_play_services_version" />
-	
-        <meta-data
-            android:name="com.google.android.gms.vision.DEPENDENCIES"
-            android:value="barcode, face"
-            tools:replace="android:value"/>
-        <activity
-            android:name="com.jumio.nv.NetverifyActivity"
-            android:windowSoftInputMode="adjustResize"
-            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
-            android:hardwareAccelerated="true"
-            android:theme="@style/CustomNetverifyTheme"/>
-        <activity
-            android:name="com.jumio.bam.BamActivity"
-            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
-            android:hardwareAccelerated="true"
-            android:theme="@style/Theme.Bam"/>
-        <activity
-            android:name="com.jumio.dv.DocumentVerificationActivity"
-            android:windowSoftInputMode="adjustResize"
-            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
-            android:hardwareAccelerated="true"
-            android:theme="@style/CustomDocumentVerificationTheme"/>
-        <activity
-            android:name="com.jumio.auth.AuthenticationActivity"
-            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
-            android:hardwareAccelerated="true"
-            android:theme="@style/Theme.Authentication"
-            android:windowSoftInputMode="adjustResize"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+
+        <meta-data android:name="com.google.android.gms.vision.DEPENDENCIES" android:value="barcode, face" tools:replace="android:value"/>
+        <activity android:name="com.jumio.nv.NetverifyActivity" android:windowSoftInputMode="adjustResize" android:configChanges="orientation|screenSize|screenLayout|keyboardHidden" android:hardwareAccelerated="true" android:theme="@style/CustomNetverifyTheme"/>
+        <activity android:name="com.jumio.bam.BamActivity" android:configChanges="orientation|screenSize|screenLayout|keyboardHidden" android:hardwareAccelerated="true" android:theme="@style/Theme.Bam"/>
+        <activity android:name="com.jumio.dv.DocumentVerificationActivity" android:windowSoftInputMode="adjustResize" android:configChanges="orientation|screenSize|screenLayout|keyboardHidden" android:hardwareAccelerated="true" android:theme="@style/CustomDocumentVerificationTheme"/>
             
         -keep class net.sf.scuba.smartcards.IsoDepCardService {*;}
         -keep class org.jmrtd.** { *; }
@@ -49,5 +23,5 @@
         -dontwarn org.ejbca.**
         -dontwarn org.bouncycastle.**
     </application>
-    
+
 </manifest>
